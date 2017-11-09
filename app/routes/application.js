@@ -111,11 +111,21 @@ export default Ember.Route.extend({
 
         return configObject;
       }),
+
+      /**
+       * Header links, top right
+       */
       navbarLinks: spreadsheet.fetch('navbar-links').then((links) => {
         return Ember.A(links).filter((link) => {
           return _routing.hasRoute(link.route);
         });
       }),
+
+      /**
+       * Front page image links.
+       *
+       * If the row does not include a link property it gets dissmissed
+       */
       mainPageLinks: spreadsheet.fetch('main-page-links').then((links) => {
         return Ember.A(links).filter((link) => {
           if (link.link) {
@@ -125,7 +135,12 @@ export default Ember.Route.extend({
           return _routing.hasRoute(link.route);
         });
       }),
+
+      /**
+       * Main page slider profiles list
+       */
       mainPageSliderData: spreadsheet.fetch('main-page-slider-data'),
+
       institucionData: spreadsheet
         .fetch('institucion-data')
         .then((institucionData) => {

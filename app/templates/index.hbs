@@ -69,6 +69,7 @@
       <strong>{{candidato.nombre}}</strong>
     {{/power-select}}
   </div>
+
   <small>
     <strong>Filtrar por: </strong>
       <label>
@@ -117,6 +118,7 @@
   </small>
 </div>
 
+{{#if model.config.useFrontPortfolioVisualization}}
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
   {{#each model.perfiles as |perfil|}}
     <article class="portfolio-item pf-media {{perfil.selector}}">
@@ -133,16 +135,17 @@
             {{perfil.nombre}}
           {{/link-to}}
         </h3>
+
         <span>
           {{#link-to 'perfil' perfil.id}}
             {{perfil.cargoNombreCorto}}
           {{/link-to}}
         </span>
       </div>
-
     </article>
   {{/each}}
 </div>
+{{/if}}
 
 {{#if model.config.mainPageLinks}}
   <div class="row main-page-links" style="margin-top: 20px;">

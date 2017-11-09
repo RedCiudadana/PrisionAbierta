@@ -23,9 +23,12 @@ module.exports = function(environment) {
 
     APP: {
       spreadsheetUrl: '/spreadsheet-url',
-      // staticFilesUrl: null
+
+      // Set null to retrieve data from the spreadsheet live. Otherwhise set the
+      // URL from which to load de dumped static files
+      staticFilesUrl: null
       // staticFilesUrl: 'http://192.168.43.112:6360/static-files/'
-      staticFilesUrl: 'http://eleccionpdh.org/static-files/'
+      // staticFilesUrl: 'http://eleccionpdh.org/static-files/'
     },
 
     disqus: {
