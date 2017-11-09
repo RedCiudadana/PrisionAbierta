@@ -1,0 +1,35 @@
+{{{model.config.resultados}}}
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <table class="table table-bordered text-center padded-table">
+      <tr>
+        <th class="header">No.</th>
+        <th class="header" style="width: 30%;">Nombre de candidato</th>
+        <th class="header">Aspectos Profesionales</th>
+        <th class="header">Aspectos Académicos</th>
+        <th class="header">Cualidades Éticas y de Probidad</th>
+        <th class="header">Proyección Humana E Idoneidad</th>
+        <th class="header">Total</th>
+      </tr>
+
+      {{#each-in model.registrosTablaGradacion as |id registroTablaGradacion|}}
+        <tr>
+          <td>{{registroTablaGradacion.numero}}</td>
+          <td>
+            {{#link-to 'perfil' registroTablaGradacion.id}}
+              {{registroTablaGradacion.nombre}}
+            {{/link-to}}
+          </td>
+          <td>{{registroTablaGradacion.aspectosProfesionales}}</td>
+          <td>{{registroTablaGradacion.aspectosAcademicos}}</td>
+          <td>{{registroTablaGradacion.cualidadesEticas}}</td>
+          <td>{{registroTablaGradacion.proyeccionHumana}}</td>
+          <td>{{registroTablaGradacion.total}}</td>
+        </tr>
+      {{/each-in}}
+    </table>
+  </div>
+  <div class="col-lg-2"></div>
+</div>

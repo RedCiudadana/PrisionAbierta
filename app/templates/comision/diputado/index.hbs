@@ -1,0 +1,94 @@
+<div class="container-profile">
+  <div>
+    <h3 class="text-center">{{model.diputado.nombre}}</h3>
+  </div>
+
+  <div class="profile-candidate">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="candidate-img-profile">
+          <img
+            src="{{model.diputado.fotoPerfil}}"
+            alt="{{model.diputado.nombre}}"
+            border="0"
+            class="img-responsive center-block"
+          >
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <table class="table">
+          <tbody>
+            {{#each-in model.diputado.informacionGeneral as |key item|}}
+              <tr>
+                <td>
+                  {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
+                  {{{item.value}}}
+                </td>
+              </tr>
+            {{/each-in}}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-4 social-side">
+        {{#if model.diputado.fotoPartido}}
+          <div class="logo-partido">
+            <img
+              src="{{model.diputado.fotoPartido}}"
+              alt="{{model.diputado.partidoActual.nombreCompleto}}"
+            >
+          </div>
+        {{/if}}
+
+        <ul class="list-unstyled">
+          {{#if model.diputado.tw}}
+            <li>
+              <i class="fa fa-twitter"></i>
+              <a
+                href="https://twitter.com/{{model.diputado.tw}}"
+                class="social-link-candidate"
+                target="_blank">@{{model.diputado.tw}}
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if model.diputado.fb}}
+            <li>
+              <i class="fa fa-facebook-official"></i>
+              <a
+                href="{{model.diputado.fb}}"
+                class="social-link-candidate"
+                target="_blank"
+              >
+                {{model.diputado.nombre}}
+              </a>
+            </li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="questionary">
+  <div class="row">
+    <div class="col-md-6">
+      <h3></h3>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Biografía</div>
+    <div class="panel-body">
+      {{{ model.diputado.biografia }}}
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Historial político</div>
+    <div class="panel-body">
+      {{{ model.perfil.historialPolitico }}}
+    </div>
+  </div>
+</div>

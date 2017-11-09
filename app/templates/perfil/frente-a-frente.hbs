@@ -1,0 +1,112 @@
+<section id="election">
+  {{#if frenteAFrenteFuncionalidad}}
+    <div id="msj-alerta" class="alert alert-info">
+      {{{frenteAFrenteFuncionalidad.title}}}
+    </div>
+  {{/if}}
+
+  <div id="compare-candidates">
+    <div class="row">
+      <div class="col-md-6">
+        {{ember-chosen
+          placeholder='Selecciona un candidato'
+          optionValuePath='id'
+          optionLabelPath='nombre'
+          content=model.perfiles
+          value=perfilUnoId
+        }}
+      </div>
+      <div class="col-md-6">
+        {{ember-chosen
+          placeholder='Selecciona un candidato'
+          optionValuePath='id'
+          optionLabelPath='nombre'
+          content=model.perfiles
+          value=perfilDosId
+        }}
+      </div>
+    </div>
+
+    <div class="hidden-xs">
+      {{#each-in frenteAFrenteSectionGroupedFields as |section fields|}}
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>
+          <div class="panel-body">
+            {{#each-in fields as |fieldName field|}}
+              {{#if field.label}}
+                <div class="row">
+                  <div class="col-md-12">
+                    <h5>{{field.label}}</h5>
+                  </div>
+                </div>
+              {{/if}}
+
+              <div class="row">
+                <div class="col-md-1">
+                  <img
+                    src="{{perfilUno.fotoPerfil}}"
+                    alt="{{perfilUno.nombre}}"
+                    border="0"
+                    class="img-responsive"
+                  >
+                </div>
+                <div class="col-md-5">
+                  <div class="fondo-blanco contenedor">
+                    <p>
+                      {{get-html-safe perfilUno field.field}}
+                    </p>
+                    <p class="text-right">{{perfilUno.nombre}}</p>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <img
+                    src="{{perfilDos.fotoPerfil}}"
+                    alt="{{perfilDos.nombre}}"
+                    border="0"
+                    class="img-responsive"
+                  >
+                </div>
+                <div class="col-md-5">
+                  <div class="fondo-blanco contenedor">
+                    <p>
+                      {{get-html-safe perfilDos field.field}}
+                    </p>
+                    <p class="text-right">{{perfilDos.nombre}}</p>
+                  </div>
+                </div>
+              </div>
+            {{/each-in}}
+          </div>
+        </div>
+      {{/each-in}}
+    </div>
+
+    <div class="visible-xs">
+      {{#each-in frenteAFrenteSectionGroupedFields as |section fields|}}
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>
+          <div class="panel-body">
+            {{#each-in fields as |fieldName field|}}
+              {{#if field.label}}
+                <h3 class="panel-title">{{field.label}}</h3>
+              {{/if}}
+
+              <div class="response-candidate-one">
+                <p>
+                  {{get-html-safe perfilUno field.field}}
+                </p>
+                <p class="text-right"><small>{{perfilUno.nombre}}</small></p>
+              </div>
+              <div class="response-candidate-dos">
+                <p>
+                  {{get-html-safe perfilDos field.field}}
+                </p>
+                <p class="text-right"><small>{{perfilDos.nombre}}</small></p>
+              </div>
+            {{/each-in}}
+          </div>
+        </div>
+      {{/each-in}}
+    </div>
+  </div>
+</section>

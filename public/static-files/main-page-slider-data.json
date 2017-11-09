@@ -1,0 +1,30 @@
+[
+  {
+    "caption": "Candidato 1",
+    "route": "perfil",
+    "id": "candidato1",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  },
+  {
+    "caption": "Candidato 2",
+    "route": "perfil",
+    "id": "candidato2",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  },
+  {
+    "caption": "Candidato 3",
+    "route": "perfil",
+    "id": "candidato3",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  },
+  {
+    "caption": "Candidato 4",
+    "route": "perfil",
+    "id": "candidato4",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  }
+]

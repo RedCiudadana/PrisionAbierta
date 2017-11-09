@@ -1,0 +1,171 @@
+{{#if model.config.siteMainTitle}}
+  {{{model.config.siteMainTitle}}}
+{{/if}}
+
+<div>
+  {{#if model.config.banner1Title}}
+    {{{model.config.banner1Title}}}
+  {{/if}}
+
+  {{#if model.config.banner1Link}}
+    <img src="{{model.config.banner1Link}}" />
+  {{/if}}
+
+  {{#if model.config.banner1Slider}}
+    <div class="hidden-xs">
+      <div class="accordion" id="slider">
+        {{#each model.config.mainPageSliderData as |link|}}
+          <li>
+            {{#if link.link}}
+              <a href="{{link.link}}">
+                <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
+              </a>
+            {{else}}
+              {{#link-to link.route link.id}}
+                <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
+              {{/link-to}}
+            {{/if}}
+            <div class="caption">{{link.caption}}</div>
+          </li>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="visible-xs">
+      <ul>
+        {{#each model.config.mainPageSliderData as |link|}}
+          <li>
+            {{#if link.link}}
+              <a href="{{link.link}}">
+                {{link.caption}}
+              </a>
+            {{else}}
+              {{#link-to link.route link.id}}
+                {{link.caption}}
+              {{/link-to}}
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+
+  {{#if model.config.banner1Footer}}
+    {{{model.config.banner1Footer}}}
+  {{/if}}
+</div>
+
+<div class="jumbotron search-container-row search-and-filter">
+  <div class="search-container" style="text-align: center;">
+    {{#power-select
+      selected=currentCandidato
+      options=model.perfiles
+      onchange=(route-action 'selectCandidato')
+      searchField='nombre'
+      placeholder='Busca a tu candidato'
+      noMatchesMessage='Sin resultados'
+        as |candidato|
+    }}
+      <strong>{{candidato.nombre}}</strong>
+    {{/power-select}}
+  </div>
+  <small>
+    <strong>Filtrar por: </strong>
+      <label>
+        {{one-way-checkbox
+          esMujer
+          update=(queue
+            (action (mut esMujer))
+            (action 'applyFilter')
+          )
+        }}
+        Mujer
+      </label>
+
+      <label>
+        {{one-way-checkbox
+          esHombre
+          update=(queue
+            (action (mut esHombre))
+            (action 'applyFilter')
+          )
+        }}
+        Hombre
+     </label>
+
+      <label>
+        {{one-way-checkbox
+          estaEnProceso
+          update=(queue
+            (action (mut estaEnProceso))
+            (action 'applyFilter')
+          )
+        }}
+        En proceso
+     </label>
+
+      <label>
+        {{one-way-checkbox
+          estaDescalificado
+          update=(queue
+            (action (mut estaDescalificado))
+            (action 'applyFilter')
+          )
+        }}
+        Descalificado
+     </label>
+  </small>
+</div>
+
+<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
+  {{#each model.perfiles as |perfil|}}
+    <article class="portfolio-item pf-media {{perfil.selector}}">
+
+      <div class="portfolio-image">
+        {{#link-to "perfil" perfil.id}}
+          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
+        {{/link-to}}
+      </div>
+
+      <div class="portfolio-desc">
+        <h3>
+          {{#link-to 'perfil' perfil.id}}
+            {{perfil.nombre}}
+          {{/link-to}}
+        </h3>
+        <span>
+          {{#link-to 'perfil' perfil.id}}
+            {{perfil.cargoNombreCorto}}
+          {{/link-to}}
+        </span>
+      </div>
+
+    </article>
+  {{/each}}
+</div>
+
+{{#if model.config.mainPageLinks}}
+  <div class="row main-page-links" style="margin-top: 20px;">
+    {{#each model.config.mainPageLinks as |link|}}
+      <div class="col-md-4">
+        {{#if link.link}}
+          <a href="{{link.link}}">
+            {{#if link.imageLink}}
+              <img src="{{link.imageLink}}" title="{{link.title}}"/>
+            {{else}}
+              {{link.title}}
+            {{/if}}
+          </a>
+        {{else}}
+          {{#link-to link.route}}
+            {{#if link.imageLink}}
+              <img src="{{link.imageLink}}" title="{{link.title}}"/>
+            {{else}}
+              {{link.title}}
+            {{/if}}
+          {{/link-to}}
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

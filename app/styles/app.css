@@ -1,0 +1,67 @@
+@import 'main.css';
+@import 'responsive.css';
+@import 'ember-power-select-bootstrap.css';
+@import 'ember-cli-spinner.css';
+
+.main-page-links img {
+    width: 100%;
+}
+
+.accordion {
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+.btn.width-full {
+    width: 100%;
+}
+
+/**
+ * Taken from http://getbootstrap.com/css/#helper-classes-center
+ */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-container-row {
+    margin-bottom: 10px;
+    background-color: #d8dade;
+}
+
+.search-container-row .ember-power-select-trigger {
+    text-align: center;
+}
+
+.search-container-row .ember-power-select-status-icon {
+    display: none;
+}
+
+td.number {
+    text-align: right;
+}
+
+table.text-center td,
+table.text-center th {
+    text-align: center;
+}
+
+th.header {
+    color: #545759;
+    background-color: #d8dade;
+}
+
+.padded-table td,
+.padded-table th {
+    padding: 15px;
+}
+
+.search-and-filter label {
+    margin-left: 15px;
+    font-weight: normal;
+}

@@ -1,0 +1,26 @@
+<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
+  {{#each model.diputados as |diputado|}}
+    <article class="portfolio-item pf-media {{diputado.institucionSelector}}">
+
+      <div class="portfolio-image">
+        {{#link-to 'comision.diputado' diputado.id}}
+          <img alt="{{diputado.cargoNombreCompleto}}" src="{{diputado.fotoPerfil}}" />
+        {{/link-to}}
+      </div>
+
+      <div class="portfolio-desc">
+        <h3>
+          {{#link-to 'comision.diputado' diputado.id}}
+            {{diputado.nombre}}
+          {{/link-to}}
+        </h3>
+        <span>
+          {{#link-to 'comision.diputado' diputado.id}}
+            {{diputado.cargoNombreCorto}}
+          {{/link-to}}
+        </span>
+      </div>
+
+    </article>
+  {{/each}}
+</div>

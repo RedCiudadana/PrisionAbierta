@@ -1,0 +1,9 @@
+[
+  {
+    "route": "institucion.index",
+    "link": "",
+    "name": "Institución",
+    "iconClass": "icon-edit",
+    "title": "Institución"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "field": "direccion",
+    "label": "Dirección:"
+  },
+  {
+    "field": "telefono",
+    "label": "Teléfono:"
+  },
+  {
+    "field": "nombreCompleto",
+    "label": "Nombre completo:"
+  },
+  {
+    "field": "sitioWeb",
+    "label": "Sitio web:"
+  },
+  {
+    "field": "fechaFundacion",
+    "label": "Fecha de fundación:"
+  }
+]

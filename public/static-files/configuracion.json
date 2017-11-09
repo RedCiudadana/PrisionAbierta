@@ -1,0 +1,57 @@
+[
+  {
+    "key": "logoUrl",
+    "value": "https://raw.githubusercontent.com/RedCiudadana/Recursos-PDH/master/Web/elementos/eleccionpdh.png",
+    "tags": ""
+  },
+  {
+    "key": "logoTitle",
+    "value": "Elección PDH",
+    "tags": ""
+  },
+  {
+    "key": "twitterShareLink",
+    "value": "//twitter.com/share?via=Redxguate&amp;text=Conoce a los aspirantes a Procurador General de Derechos Humanos en Guatemala.",
+    "tags": ""
+  },
+  {
+    "key": "facebookShareLink",
+    "value": "//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Feleccionpdh.org",
+    "tags": ""
+  },
+  {
+    "key": "siteMainTitle",
+    "value": "<h2 class=\"text-center\">Encuentra aquí todo los datos sobre la elección del Procurador de Derechos Humanos.<br><small>¡Infórmate, interactúa e incide!</small></h2>",
+    "tags": ""
+  },
+  {
+    "key": "banner1Link",
+    "value": "",
+    "tags": ""
+  },
+  {
+    "key": "banner1Title",
+    "value": "<h3 class=\"portada\" style=\"text-align: center;\">Elección PDH</h3>",
+    "tags": ""
+  },
+  {
+    "key": "banner1Footer",
+    "value": "",
+    "tags": ""
+  },
+  {
+    "key": "banner1Slider",
+    "value": "",
+    "tags": ""
+  },
+  {
+    "key": "metodologia",
+    "value": "<h1>Metodología</h1><p>Esta es la metodología</p>",
+    "tags": ""
+  },
+  {
+    "key": "resultados",
+    "value": "<h1>Tabla de Gradación</h1><p>Estas son las valoraciones por criterio obtenidas por cada candidato</p>",
+    "tags": ""
+  }
+]

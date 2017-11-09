@@ -1,0 +1,49 @@
+<div class="row breadscrumb-social hidden-xs">
+  <div class="col-md-9">
+    {{!-- TODO: Fix direct access functionality --}}
+    {{bread-crumbs tagName="ul" outputStyle="bootstrap" linkable=true}}
+  </div>
+
+  <div class="col-md-3 hidden-xs">
+    <div class="row social-button">
+      <div class="col-md-4">
+        {{twitter-share count='horizontal' hashtags='CandiDATOSgt'}}
+      </div>
+      <div class="col-md-4">
+        {{facebook-share fb-layout='button_count'}}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{#if model.config.institucionFuncionalidades}}
+  <div class="row">
+    <div class="nav-candidator">
+      <nav class="col-md-12">
+        <ul class="list-inline">
+          {{#each model.config.institucionFuncionalidades as |link|}}
+            {{#active-link}}
+              {{#if link.link}}
+                <a href="{{link.link}}" title="{{link.title}}">
+                  {{#if link.iconClass}}
+                    <i class="{{link.iconClass}}"></i>
+                  {{/if}}
+                  {{link.name}}
+                </a>
+              {{else}}
+                {{#link-to link.route title=link.title}}
+                  {{#if link.iconClass}}
+                    <i class="{{link.iconClass}}"></i>
+                  {{/if}}
+                  {{link.name}}
+                {{/link-to}}
+              {{/if}}
+            {{/active-link}}
+          {{/each}}
+        </ul>
+      </nav>
+    </div>
+  </div>
+{{/if}}
+
+{{outlet}}

@@ -1,0 +1,21 @@
+<section id="election">
+  <div class="row breadscrumb-social hidden-xs">
+    <div class="col-md-9">
+      {{!-- TODO: Fix direct access functionality --}}
+      {{bread-crumbs tagName="ul" outputStyle="bootstrap" linkable=true}}
+    </div>
+
+    <div class="col-md-3">
+      <div class="row social-button">
+        <div class="col-md-4">
+          {{twitter-share count='horizontal' hashtags='CandiDATOSgt'}}
+        </div>
+        <div class="col-md-4">
+          {{facebook-share fb-layout='button_count'}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{outlet}}
+</section>

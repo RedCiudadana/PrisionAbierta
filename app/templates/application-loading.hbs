@@ -1,0 +1,6 @@
+{{!-- TODO: Pendiente unificar despliegue de flash messages con application.hbs --}}
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+
+{{ember-cli-spinner id='main' type='pulse' isShow=true bgColor='#787F83' color='white'}}

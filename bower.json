@@ -1,0 +1,13 @@
+{
+  "name": "mi-guatemala",
+  "dependencies": {
+    "ember": "~2.9.0",
+    "ember-cli-shims": "~0.1.1",
+    "bootstrap": "~3.3.5",
+    "flexslider": "^2.6.0",
+    "isotope": "^2.2.2",
+    "tabletop": "^1.4.3",
+    "chosen": "1.6.2",
+    "lodash": "^4.17.4"
+  }
+}

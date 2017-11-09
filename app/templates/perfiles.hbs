@@ -1,0 +1,27 @@
+<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
+  {{#each model.perfiles as |perfil|}}
+    <article class="portfolio-item pf-media {{perfil.institucionSelector}}">
+
+      <div class="portfolio-image">
+        {{#link-to "perfil" perfil.id}}
+          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
+        {{/link-to}}
+      </div>
+
+      <div class="portfolio-desc">
+        <h3>
+          {{#link-to 'perfil' perfil.id}}
+            {{perfil.nombre}}
+          {{/link-to}}
+        </h3>
+        <span>
+          {{#link-to 'perfil' perfil.id}}
+            {{!-- {{model.institucionData.nombre}}, --}}
+            {{perfil.cargoNombreCorto}}
+          {{/link-to}}
+        </span>
+      </div>
+
+    </article>
+  {{/each}}
+</div>

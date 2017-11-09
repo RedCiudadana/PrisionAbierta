@@ -1,0 +1,81 @@
+<section id="election">
+  {{#if factCheckingFuncionalidad}}
+    <div id="msj-alerta" class="alert alert-info">
+      {{{factCheckingFuncionalidad.title}}}
+    </div>
+  {{/if}}
+
+  <div id="compare-candidates">
+    <div class="hidden-xs">
+      {{#each-in factCheckingGroupedItemsList as |section itemsList|}}
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>
+          <div class="panel-body">
+            {{#each-in itemsList as |index item|}}
+              <div class="row">
+                <div class="col-md-12">
+                  <h5>{{{item.title}}}</h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-1">
+                  <img
+                    src="{{perfil.fotoPerfil}}"
+                    alt="{{perfil.nombre}}"
+                    border="0"
+                    class="img-responsive"
+                  >
+                </div>
+                <div class="col-md-5">
+                  <div class="fondo-blanco contenedor">
+                    <p>
+                      {{{item.quote}}}
+                    </p>
+                    <p class="text-right">{{perfil.nombre}}</p>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5">
+                  <div class="fondo-blanco contenedor">
+                    <p>
+                      {{{item.fact}}}
+                    </p>
+                    <p class="text-right">{{item.source}}</p>
+                  </div>
+                </div>
+              </div>
+            {{/each-in}}
+          </div>
+        </div>
+      {{/each-in}}
+    </div>
+
+    <div class="visible-xs">
+      {{#each-in factCheckingGroupedItemsList as |section itemsList|}}
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>
+          <div class="panel-body">
+            {{#each-in itemsList as |index item|}}
+              <h3 class="panel-title">{{{item.title}}}</h3>
+
+              <div class="response-candidate-one">
+                <p>
+                  {{{item.quote}}}
+                </p>
+                <p class="text-right"><small>{{perfil.nombre}}</small></p>
+              </div>
+              <div class="response-candidate-dos">
+                <p>
+                  {{{item.fact}}}
+                </p>
+                <p class="text-right"><small>{{item.source}}</small></p>
+              </div>
+            {{/each-in}}
+          </div>
+        </div>
+      {{/each-in}}
+    </div>
+  </div>
+</section>

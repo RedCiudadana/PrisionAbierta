@@ -1,0 +1,81 @@
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+
+<div id="wrapper">
+  {{#bs-navbar type="inverse" position="fixed-top" fluid=false}}
+    <div class="navbar-header">
+      {{#bs-navbar-toggle}}
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      {{/bs-navbar-toggle}}
+      {{#link-to "application" class="navbar-brand"}}
+        <img
+          src="{{model.config.logoUrl}}"
+          class="img-responsive"
+          title="{{model.config.logoTitle}}"
+          alt="{{model.config.logoTitle}}">
+      {{/link-to}}
+    </div>
+    {{#bs-navbar-content}}
+      {{#bs-navbar-nav}}
+        {{#each model.config.navbarLinks as |link|}}
+          {{#bs-nav-item active=false}}{{#link-to link.route}}{{link.title}}{{/link-to}}{{/bs-nav-item}}
+        {{/each}}
+      {{/bs-navbar-nav}}
+    {{/bs-navbar-content}}
+  {{/bs-navbar}}
+
+  <div class="container">
+    {{outlet}}
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>Ayúdanos a llegar a más personas</h5>
+        <ul>
+          <li><a href="http://donacion.redciudadana.org/" target="_blank"><i class="fa fa-heart"></i> Donaciones</a></li>
+          <li><a href="http://voluntarios.redciudadana.org/" target="_blank"><i class="fa fa-users"></i> Voluntariado</a></li>
+        </ul>
+      </div>
+
+      <style type="text/css">
+        .logo {
+          width: 30%;
+        }
+      </style>
+
+      <div class="col-md-6 text-center">
+        <h5>Desarrollado por:</h5>
+        <a href="http://www.redciudadana.org/" target="_blank">
+          <img class="logo" src="http://vi-gt2015.s3.amazonaws.com/img/logo_red_ciudadana.png" alt="Red Ciudadana" title="Red ciudadana">
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Contáctanos</h5>
+        <ul>
+          <li><a href="mailto:info@redciudadana.org.gt?Subject=Prensa%20CandiDatos" class="email-prensa" target="_top"><i class="icon-envelope-alt"></i> Email</a></li>
+          <li><a href="https://goo.gl/maps/aIJEd" target="_blank"><i class="icon-map-marker"></i> 12 calle 1-25 zona 10 Edificio Géminis 10 Torre Norte Oficina 1413</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+
+      <div class="col-md-6 text-center">
+        <h5>Con el apoyo de:</h5>
+      </div>
+
+      <div class="col-md-3">
+      </div>
+    </div>
+  </div>
+</div>

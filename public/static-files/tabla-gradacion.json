@@ -1,0 +1,677 @@
+[
+  {
+    "perfil": "candidato1",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "6.7"
+  },
+  {
+    "perfil": "candidato1",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "27.1"
+  },
+  {
+    "perfil": "candidato1",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "6"
+  },
+  {
+    "perfil": "candidato1",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato1",
+    "aspecto": "Total",
+    "puntaje": "39.8"
+  },
+  {
+    "perfil": "candidato2",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "26.72"
+  },
+  {
+    "perfil": "candidato2",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "46.52"
+  },
+  {
+    "perfil": "candidato2",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "10"
+  },
+  {
+    "perfil": "candidato2",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "Diputadas Nineth Montenegro y Sandra Moran dudan de Idoniedad"
+  },
+  {
+    "perfil": "candidato2",
+    "aspecto": "Total",
+    "puntaje": "83.24"
+  },
+  {
+    "perfil": "candidato3",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "28.46"
+  },
+  {
+    "perfil": "candidato3",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "50.61"
+  },
+  {
+    "perfil": "candidato3",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "6.15"
+  },
+  {
+    "perfil": "candidato3",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "Diputado Alvaro Arzu dudo idoniedad"
+  },
+  {
+    "perfil": "candidato3",
+    "aspecto": "Total",
+    "puntaje": "85.22"
+  },
+  {
+    "perfil": "candidato4",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "21"
+  },
+  {
+    "perfil": "candidato4",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "52.79"
+  },
+  {
+    "perfil": "candidato4",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "5.46"
+  },
+  {
+    "perfil": "candidato4",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato4",
+    "aspecto": "Total",
+    "puntaje": "79.25"
+  },
+  {
+    "perfil": "candidato5",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "17.99"
+  },
+  {
+    "perfil": "candidato5",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "56"
+  },
+  {
+    "perfil": "candidato5",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "5.18"
+  },
+  {
+    "perfil": "candidato5",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato5",
+    "aspecto": "Total",
+    "puntaje": "79.17"
+  },
+  {
+    "perfil": "candidato6",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "18"
+  },
+  {
+    "perfil": "candidato6",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "50"
+  },
+  {
+    "perfil": "candidato6",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "10"
+  },
+  {
+    "perfil": "candidato6",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato6",
+    "aspecto": "Total",
+    "puntaje": "78"
+  },
+  {
+    "perfil": "candidato7",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "9.5"
+  },
+  {
+    "perfil": "candidato7",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "21.07"
+  },
+  {
+    "perfil": "candidato7",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "0"
+  },
+  {
+    "perfil": "candidato7",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato7",
+    "aspecto": "Total",
+    "puntaje": "30.57"
+  },
+  {
+    "perfil": "candidato8",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "9.16"
+  },
+  {
+    "perfil": "candidato8",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "46.25"
+  },
+  {
+    "perfil": "candidato8",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "0"
+  },
+  {
+    "perfil": "candidato8",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato8",
+    "aspecto": "Total",
+    "puntaje": "55.41"
+  },
+  {
+    "perfil": "candidato9",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "25.63"
+  },
+  {
+    "perfil": "candidato9",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "50"
+  },
+  {
+    "perfil": "candidato9",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "10"
+  },
+  {
+    "perfil": "candidato9",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato9",
+    "aspecto": "Total",
+    "puntaje": "85.63"
+  },
+  {
+    "perfil": "candidato10",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "23.72"
+  },
+  {
+    "perfil": "candidato10",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "52.73"
+  },
+  {
+    "perfil": "candidato10",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "9.45"
+  },
+  {
+    "perfil": "candidato10",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato10",
+    "aspecto": "Total",
+    "puntaje": "85.9"
+  },
+  {
+    "perfil": "candidato11",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "10.7"
+  },
+  {
+    "perfil": "candidato11",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "27.68"
+  },
+  {
+    "perfil": "candidato11",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "0"
+  },
+  {
+    "perfil": "candidato11",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "Diputados Amilcar Pop, Walter Felix, Nineth Montenegro y Sandra Moran dudaron de idoniedad"
+  },
+  {
+    "perfil": "candidato11",
+    "aspecto": "Total",
+    "puntaje": "38.38"
+  },
+  {
+    "perfil": "candidato12",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "0"
+  },
+  {
+    "perfil": "candidato12",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "50"
+  },
+  {
+    "perfil": "candidato12",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "0"
+  },
+  {
+    "perfil": "candidato12",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato12",
+    "aspecto": "Total",
+    "puntaje": "50"
+  },
+  {
+    "perfil": "candidato13",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "12.75"
+  },
+  {
+    "perfil": "candidato13",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "14.38"
+  },
+  {
+    "perfil": "candidato13",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "4.75"
+  },
+  {
+    "perfil": "candidato13",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato13",
+    "aspecto": "Total",
+    "puntaje": "31.88"
+  },
+  {
+    "perfil": "candidato14",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "10.3"
+  },
+  {
+    "perfil": "candidato14",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "4.5"
+  },
+  {
+    "perfil": "candidato14",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "10"
+  },
+  {
+    "perfil": "candidato14",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato14",
+    "aspecto": "Total",
+    "puntaje": "24.8"
+  },
+  {
+    "perfil": "candidato15",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "17.81"
+  },
+  {
+    "perfil": "candidato15",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "58.18"
+  },
+  {
+    "perfil": "candidato15",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "4.45"
+  },
+  {
+    "perfil": "candidato15",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato15",
+    "aspecto": "Total",
+    "puntaje": "80.44"
+  },
+  {
+    "perfil": "candidato16",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "14"
+  },
+  {
+    "perfil": "candidato16",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "34.19"
+  },
+  {
+    "perfil": "candidato16",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "0.36"
+  },
+  {
+    "perfil": "candidato16",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato16",
+    "aspecto": "Total",
+    "puntaje": "48.55"
+  },
+  {
+    "perfil": "candidato17",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "4"
+  },
+  {
+    "perfil": "candidato17",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "42.33"
+  },
+  {
+    "perfil": "candidato17",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "13.3"
+  },
+  {
+    "perfil": "candidato17",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato17",
+    "aspecto": "Total",
+    "puntaje": "59.63"
+  },
+  {
+    "perfil": "candidato18",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "15.73"
+  },
+  {
+    "perfil": "candidato18",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "49.58"
+  },
+  {
+    "perfil": "candidato18",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "2"
+  },
+  {
+    "perfil": "candidato18",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato18",
+    "aspecto": "Total",
+    "puntaje": "67.31"
+  },
+  {
+    "perfil": "candidato19",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "5.42"
+  },
+  {
+    "perfil": "candidato19",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "5"
+  },
+  {
+    "perfil": "candidato19",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "6.75"
+  },
+  {
+    "perfil": "candidato19",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato19",
+    "aspecto": "Total",
+    "puntaje": "17.17"
+  },
+  {
+    "perfil": "candidato20",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "8.6"
+  },
+  {
+    "perfil": "candidato20",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "21"
+  },
+  {
+    "perfil": "candidato20",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "0"
+  },
+  {
+    "perfil": "candidato20",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato20",
+    "aspecto": "Total",
+    "puntaje": "29.6"
+  },
+  {
+    "perfil": "candidato21",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "10"
+  },
+  {
+    "perfil": "candidato21",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "45"
+  },
+  {
+    "perfil": "candidato21",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "4"
+  },
+  {
+    "perfil": "candidato21",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato21",
+    "aspecto": "Total",
+    "puntaje": "59"
+  },
+  {
+    "perfil": "candidato22",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "16.54"
+  },
+  {
+    "perfil": "candidato22",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "44.73"
+  },
+  {
+    "perfil": "candidato22",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "3.27"
+  },
+  {
+    "perfil": "candidato22",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato22",
+    "aspecto": "Total",
+    "puntaje": "64.54"
+  },
+  {
+    "perfil": "candidato23",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "18"
+  },
+  {
+    "perfil": "candidato23",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "41.33"
+  },
+  {
+    "perfil": "candidato23",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "10"
+  },
+  {
+    "perfil": "candidato23",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato23",
+    "aspecto": "Total",
+    "puntaje": "69.33"
+  },
+  {
+    "perfil": "candidato24",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "19.64"
+  },
+  {
+    "perfil": "candidato24",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "50"
+  },
+  {
+    "perfil": "candidato24",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "4"
+  },
+  {
+    "perfil": "candidato24",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato24",
+    "aspecto": "Total",
+    "puntaje": "73.64"
+  },
+  {
+    "perfil": "candidato25",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "23"
+  },
+  {
+    "perfil": "candidato25",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "23.27"
+  },
+  {
+    "perfil": "candidato25",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "4"
+  },
+  {
+    "perfil": "candidato25",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato25",
+    "aspecto": "Total",
+    "puntaje": "50.27"
+  },
+  {
+    "perfil": "candidato26",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "19.2"
+  },
+  {
+    "perfil": "candidato26",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "31.77"
+  },
+  {
+    "perfil": "candidato26",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "10"
+  },
+  {
+    "perfil": "candidato26",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato26",
+    "aspecto": "Total",
+    "puntaje": "60.97"
+  },
+  {
+    "perfil": "candidato27",
+    "aspecto": "Aspectos Académicos",
+    "puntaje": "24"
+  },
+  {
+    "perfil": "candidato27",
+    "aspecto": "Aspectos Profesionales",
+    "puntaje": "59.5"
+  },
+  {
+    "perfil": "candidato27",
+    "aspecto": "Proyección Humana E Idoneidad",
+    "puntaje": "9.83"
+  },
+  {
+    "perfil": "candidato27",
+    "aspecto": "Cualidades Éticas y de Probidad",
+    "puntaje": "x"
+  },
+  {
+    "perfil": "candidato27",
+    "aspecto": "Total",
+    "puntaje": "93.33"
+  }
+]
