@@ -52,6 +52,7 @@
     "ember-inject-script": "0.0.2",
     "ember-load-initializers": "^0.5.1",
     "ember-one-way-controls": "2.0.0",
+    "ember-page-title": "3.2.2",
     "ember-power-select": "1.8.4",
     "ember-radio-button": "1.1.1",
     "ember-resolver": "^2.0.3",

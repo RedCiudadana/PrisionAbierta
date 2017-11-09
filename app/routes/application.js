@@ -2,6 +2,8 @@ import Ember from 'ember';
 import config from '../config/environment';
 import injectScript from 'ember-inject-script';
 
+const { isNone } = Ember;
+
 export default Ember.Route.extend({
   spreadsheets: Ember.inject.service(),
 
@@ -13,19 +15,11 @@ export default Ember.Route.extend({
     title: 'application breadcrumb'
   },
 
-  init() {
-    this._super(...arguments);
-
-    let url = '//my.hellobar.com/8700f679a0f3df81d69a2201bbf5f6740b22a2f9.js';
-
-    injectScript(url);
-  },
-
   /**
    * Setear la URL del spreadhseet y procesar los campos de información general
    * del perfil.
    *
-   * TODO: Hacer esto en un lugar más decente, por el amor del Señor
+   * TODO: Hacer esto en un lugar más decente, por amor al Señor
    */
   beforeModel() {
     const spreadsheet = this.get('spreadsheets');
@@ -36,7 +30,11 @@ export default Ember.Route.extend({
         spreadsheet.set('spreadsheet', response);
 
         return Ember.RSVP.all([
-          // Información general de perfil
+
+          /**
+           * Setear la información del perfil mediante la parametrización proveniente
+           * de la configuración
+           */
           spreadsheet
             .fetch('perfil-informacion-general-configuracion')
             .then((configuracionData) => {
@@ -55,6 +53,8 @@ export default Ember.Route.extend({
             }),
 
           // Información general de diputado
+          // TODO: Evaluar pertinencia, ya que es una funcionalidad específica de
+          // Elección PDH
           spreadsheet
             .fetch('diputado-informacion-general-configuracion')
             .then((configuracionData) => {
@@ -69,10 +69,13 @@ export default Ember.Route.extend({
 
               let diputadoSerializer = this.store.serializerFor('diputado-comision');
 
-              diputadoSerializer.set('informacionGeneralFields', diputadoDataArray);
+              diputadoSerializer.set('informacionGeneralFields', Ember.A());
               diputadoSerializer.set('frenteAFrenteFields', Ember.A());
             }),
 
+          /**
+           * Setear los campos a utilizar en la funcionalidad de frente-a-frente
+           */
           spreadsheet
             .fetch('perfil-frente-a-frente-configuracion')
             .then((configuracionData) => {
@@ -109,13 +112,30 @@ export default Ember.Route.extend({
           configObject.set(item.key, item.value);
         });
 
+        /**
+         * Inject HelloBar if defined
+         */
+        if (!isNone(configObject.helloBarUrl)) {
+          injectScript(configObject.helloBarUrl);
+        }
+
         return configObject;
       }),
+
+      /**
+       * Header links, top right
+       */
       navbarLinks: spreadsheet.fetch('navbar-links').then((links) => {
         return Ember.A(links).filter((link) => {
           return _routing.hasRoute(link.route);
         });
       }),
+
+      /**
+       * Front page image links.
+       *
+       * If the row does not include a link property it gets dissmissed
+       */
       mainPageLinks: spreadsheet.fetch('main-page-links').then((links) => {
         return Ember.A(links).filter((link) => {
           if (link.link) {
@@ -125,7 +145,12 @@ export default Ember.Route.extend({
           return _routing.hasRoute(link.route);
         });
       }),
+
+      /**
+       * Main page slider profiles list
+       */
       mainPageSliderData: spreadsheet.fetch('main-page-slider-data'),
+
       institucionData: spreadsheet
         .fetch('institucion-data')
         .then((institucionData) => {

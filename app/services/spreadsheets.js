@@ -39,16 +39,24 @@ export default Ember.Service.extend({
         callback: (data) => {
           if (Ember.isNone(data[worksheet])) {
             let errorMessage = `Got no answer for spreadsheet ${worksheet}`;
-            this.get('flashMessages').danger(errorMessage, {sticky: true});
+            // TODO: Get back vorkin
+            // this.get('flashMessages').danger(errorMessage, {sticky: true});
 
-            throw new Error(errorMessage);
+            // TODO: Convertir en alerta de console.log
+            console.log(errorMessage);
+
+            return resolve();
           }
 
           if (Ember.isNone(data[worksheet].elements)) {
             let errorMessage = `Got a problem with the elements for spreadsheet ${worksheet}`;
-            this.get('flashMessages').danger(errorMessage, {sticky: true});
+            // TODO: Get back vorkin
+            // this.get('flashMessages').danger(errorMessage, {sticky: true});
 
-            throw new Error(errorMessage);
+            // TODO: Convertir en alerta de console.log
+            console.log(errorMessage);
+
+            return resolve();
           }
 
           resolve(data[worksheet].elements);
