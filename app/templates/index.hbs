@@ -150,14 +150,24 @@
 {{#if model.config.useFrontTableVisualization}}
   <table class="table">
     <tr>
-      <th>Nombre</th>
+      {{#each model.frontTableVisualizationConfig as |field|}}
+        <th>{{field.tableTitle}}</th>
+      {{/each}}
     </tr>
 
     {{#each model.perfiles as |perfil|}}
       <tr>
-        {{#link-to 'perfil' perfil.id}}
-          {{perfil.nombre}}
-        {{/link-to}}
+        {{#each model.frontTableVisualizationConfig as |field|}}
+          <td>
+            {{#if field.isLink}}
+              {{#link-to 'perfil' perfil.id}}
+                {{get perfil field.fieldName}}
+              {{/link-to}}
+            {{else}}
+              {{get perfil field.fieldName}}
+            {{/if}}
+          </td>
+        {{/each}}
       </tr>
     {{/each}}
   </table>

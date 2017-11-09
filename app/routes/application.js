@@ -162,6 +162,8 @@ export default Ember.Route.extend({
 
           return institucionDataObject;
         }),
+
+      frontTableVisualizationConfig: spreadsheet.fetch('front-table-visualization-config')
     });
   },
 
