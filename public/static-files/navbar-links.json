@@ -1,15 +1,11 @@
 [
   {
     "route": "perfiles",
-    "title": "Candidatos"
-  },
-  {
-    "route": "comision",
-    "title": "Comision DH"
+    "title": "Prisiones"
   },
   {
     "route": "resultados",
-    "title": "Tabla de Gradación"
+    "title": "Evidencia con Datos"
   },
   {
     "route": "metodologia",

@@ -1,0 +1,22 @@
+[
+  {
+    "fieldName": "nombre",
+    "tableTitle": "Nombre",
+    "isLink": "1"
+  },
+  {
+    "fieldName": "direccion",
+    "tableTitle": "País",
+    "isLink": "1"
+  },
+  {
+    "fieldName": "profesion",
+    "tableTitle": "Indicador 1",
+    "isLink": ""
+  },
+  {
+    "fieldName": "educacion",
+    "tableTitle": "Indicador 2",
+    "isLink": ""
+  }
+]

@@ -59,25 +59,28 @@
   <div class="search-container" style="text-align: center;">
     <div class="col-md-6">
       {{#power-select
+        selected=currentPais
+        options=paises
+        onchange=(action 'selectPais')
+        placeholder='Toda Latinoamérica'
+        noMatchesMessage='Sin resultados'
+          as |pais|
+      }}
+        <strong>{{pais}}</strong>
+      {{/power-select}}
+    </div>
+
+    <div class="col-md-6">
+      {{#power-select
         selected=currentCandidato
         options=model.perfiles
         onchange=(route-action 'selectPerfil')
         searchField='nombre'
-        placeholder='Busca a tu candidato'
+        placeholder='Busca una institución'
         noMatchesMessage='Sin resultados'
           as |candidato|
       }}
         <strong>{{candidato.nombre}}</strong>
-      {{/power-select}}
-    </div>
-    <div class="col-md-6">
-      {{#power-select
-        selected=currentPais
-        options=paises
-        onchange=(action 'selectPais')
-          as |pais|
-      }}
-        <strong>{{pais}}</strong>
       {{/power-select}}
     </div>
   </div>
@@ -85,7 +88,7 @@
 
 {{#if model.config.useFrontPortfolioVisualization}}
   <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
-    {{#each model.perfiles as |perfil|}}
+    {{#each activePerfiles as |perfil|}}
       <article class="portfolio-item pf-media {{perfil.selector}}">
 
         <div class="portfolio-image">
@@ -120,7 +123,7 @@
       {{/each}}
     </tr>
 
-    {{#each model.perfiles as |perfil|}}
+    {{#each activePerfiles as |perfil|}}
       <tr>
         {{#each model.frontTableVisualizationConfig as |field|}}
           <td>

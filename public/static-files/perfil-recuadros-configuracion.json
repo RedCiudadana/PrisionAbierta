@@ -1,13 +1,5 @@
 [
   {
-    "field": "nombre",
-    "label": "Nombre"
-  },
-  {
-    "field": "direccion",
-    "label": "País"
-  },
-  {
     "field": "profesion",
     "label": "Indicador 1"
   },
