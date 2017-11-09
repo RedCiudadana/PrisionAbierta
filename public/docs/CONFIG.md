@@ -18,6 +18,7 @@ useFrontPortfolioVisualization: Define si se utilizará la visualización de por
 sobre los perfiles en la página principal
 useFrontTableVisualization: Define si se utilizará la visualización de tabla sobre
 los perfiles en la página principal
+htmlTitle: Define el texto que se utilizará como HTML title.
 
 El resultado de esta configuración se mapea a `model.config` de la ruta `application`.
 
@@ -27,3 +28,29 @@ router se excluye del listado.
 
 main-page-slider-data: define los `link`s, `caption`, `route`, `id` e `imageLink`
 de los perfiles que se utilizarán para el _main page slider_
+
+institucion-funcionalidades:
+
+institucion-informacion-general-configuracion:
+
+institucion-data:
+
+perfil-funcionalidades: define las funcionalidades asociadas a un perfil como rutas
+hijas de la ruta `perfil`
+
+perfil-informacion-general-configuracion: define los campos a utilizar como información
+general de un `perfil`
+
+diputados-comision:
+
+partido:
+
+perfil:
+
+documentos-disponibles:
+
+fact-checking-data:
+
+tabla-gradacion:
+
+perfil-frente-a-frente-configuracion:

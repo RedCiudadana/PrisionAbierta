@@ -25,7 +25,7 @@ export default Ember.Route.extend({
    * Setear la URL del spreadhseet y procesar los campos de información general
    * del perfil.
    *
-   * TODO: Hacer esto en un lugar más decente, por el amor del Señor
+   * TODO: Hacer esto en un lugar más decente, por amor al Señor
    */
   beforeModel() {
     const spreadsheet = this.get('spreadsheets');
@@ -36,7 +36,11 @@ export default Ember.Route.extend({
         spreadsheet.set('spreadsheet', response);
 
         return Ember.RSVP.all([
-          // Información general de perfil
+
+          /**
+           * Setear la información del perfil mediante la parametrización proveniente
+           * de la configuración
+           */
           spreadsheet
             .fetch('perfil-informacion-general-configuracion')
             .then((configuracionData) => {
@@ -55,6 +59,8 @@ export default Ember.Route.extend({
             }),
 
           // Información general de diputado
+          // TODO: Evaluar pertinencia, ya que es una funcionalidad específica de
+          // Elección PDH
           spreadsheet
             .fetch('diputado-informacion-general-configuracion')
             .then((configuracionData) => {
@@ -69,10 +75,13 @@ export default Ember.Route.extend({
 
               let diputadoSerializer = this.store.serializerFor('diputado-comision');
 
-              diputadoSerializer.set('informacionGeneralFields', diputadoDataArray);
+              diputadoSerializer.set('informacionGeneralFields', Ember.A());
               diputadoSerializer.set('frenteAFrenteFields', Ember.A());
             }),
 
+          /**
+           * Setear los campos a utilizar en la funcionalidad de frente-a-frente
+           */
           spreadsheet
             .fetch('perfil-frente-a-frente-configuracion')
             .then((configuracionData) => {
