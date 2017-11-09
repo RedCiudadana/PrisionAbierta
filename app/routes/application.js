@@ -196,7 +196,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    selectCandidato(candidato) {
+    selectPerfil(candidato) {
       this.transitionTo('perfil', candidato.get('id'));
     }
   }
