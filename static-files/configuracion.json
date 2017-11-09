@@ -1,12 +1,12 @@
 [
   {
     "key": "logoUrl",
-    "value": "https://raw.githubusercontent.com/RedCiudadana/Recursos-PDH/master/Web/elementos/eleccionpdh.png",
+    "value": "https://raw.githubusercontent.com/RedCiudadana/PrisionAbierta/master/public/images/logo.png",
     "tags": ""
   },
   {
     "key": "logoTitle",
-    "value": "Elección PDH",
+    "value": "Prision Abierta",
     "tags": ""
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "key": "siteMainTitle",
-    "value": "<h2 class=\"text-center\">Encuentra aquí todo los datos sobre la elección del Procurador de Derechos Humanos.<br><small>¡Infórmate, interactúa e incide!</small></h2>",
+    "value": "<h2 class=\"text-center\">Encuentra aquí todos los datos sobre prisiones en Latinaomérica</small></h2>",
     "tags": ""
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "key": "banner1Title",
-    "value": "<h3 class=\"portada\" style=\"text-align: center;\">Elección PDH</h3>",
+    "value": "<h3 class=\"portada\" style=\"text-align: center;\">Prisión Abierta</h3>",
     "tags": ""
   },
   {
@@ -52,6 +52,26 @@
   {
     "key": "resultados",
     "value": "<h1>Tabla de Gradación</h1><p>Estas son las valoraciones por criterio obtenidas por cada candidato</p>",
+    "tags": ""
+  },
+  {
+    "key": "useFrontPortfolioVisualization",
+    "value": "",
+    "tags": ""
+  },
+  {
+    "key": "useFrontTableVisualization",
+    "value": "1",
+    "tags": ""
+  },
+  {
+    "key": "htmlTitle",
+    "value": "Prisión Abierta",
+    "tags": ""
+  },
+  {
+    "key": "helloBarUrl",
+    "value": "",
     "tags": ""
   }
 ]
