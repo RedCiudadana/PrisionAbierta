@@ -1,4 +1,4 @@
-# MiGuatemala
+# Prisión Abierta
 
-MiGuatemala es una aplicación destinada fomentar la transparencia en materia de funcionarios
-e instituciones públicas.
+(Prisión Abierta)[prisionabierta.redciudadana.org] es una aplicación destinada a fomentar
+la transparencia en materia de prisiones públicas.
