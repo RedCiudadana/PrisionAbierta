@@ -18,7 +18,8 @@ useFrontPortfolioVisualization: Define si se utilizará la visualización de por
 sobre los perfiles en la página principal
 useFrontTableVisualization: Define si se utilizará la visualización de tabla sobre
 los perfiles en la página principal
-htmlTitle: Define el texto que se utilizará como HTML title.
+htmlTitle: Define el texto que se utilizará como HTML title
+helloBarUrl: 
 
 El resultado de esta configuración se mapea a `model.config` de la ruta `application`.
 

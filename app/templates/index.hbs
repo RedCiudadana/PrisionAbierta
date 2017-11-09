@@ -119,32 +119,48 @@
 </div>
 
 {{#if model.config.useFrontPortfolioVisualization}}
-<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
-  {{#each model.perfiles as |perfil|}}
-    <article class="portfolio-item pf-media {{perfil.selector}}">
+  <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
+    {{#each model.perfiles as |perfil|}}
+      <article class="portfolio-item pf-media {{perfil.selector}}">
 
-      <div class="portfolio-image">
-        {{#link-to "perfil" perfil.id}}
-          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
+        <div class="portfolio-image">
+          {{#link-to "perfil" perfil.id}}
+            <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
+          {{/link-to}}
+        </div>
+
+        <div class="portfolio-desc">
+          <h3>
+            {{#link-to 'perfil' perfil.id}}
+              {{perfil.nombre}}
+            {{/link-to}}
+          </h3>
+
+          <span>
+            {{#link-to 'perfil' perfil.id}}
+              {{perfil.cargoNombreCorto}}
+            {{/link-to}}
+          </span>
+        </div>
+      </article>
+    {{/each}}
+  </div>
+{{/if}}
+
+{{#if model.config.useFrontTableVisualization}}
+  <table class="table">
+    <tr>
+      <th>Nombre</th>
+    </tr>
+
+    {{#each model.perfiles as |perfil|}}
+      <tr>
+        {{#link-to 'perfil' perfil.id}}
+          {{perfil.nombre}}
         {{/link-to}}
-      </div>
-
-      <div class="portfolio-desc">
-        <h3>
-          {{#link-to 'perfil' perfil.id}}
-            {{perfil.nombre}}
-          {{/link-to}}
-        </h3>
-
-        <span>
-          {{#link-to 'perfil' perfil.id}}
-            {{perfil.cargoNombreCorto}}
-          {{/link-to}}
-        </span>
-      </div>
-    </article>
-  {{/each}}
-</div>
+      </tr>
+    {{/each}}
+  </table>
 {{/if}}
 
 {{#if model.config.mainPageLinks}}

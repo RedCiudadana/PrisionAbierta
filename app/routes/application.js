@@ -2,6 +2,8 @@ import Ember from 'ember';
 import config from '../config/environment';
 import injectScript from 'ember-inject-script';
 
+const { isNone } = Ember;
+
 export default Ember.Route.extend({
   spreadsheets: Ember.inject.service(),
 
@@ -11,14 +13,6 @@ export default Ember.Route.extend({
 
   breadCrumb: {
     title: 'application breadcrumb'
-  },
-
-  init() {
-    this._super(...arguments);
-
-    let url = '//my.hellobar.com/8700f679a0f3df81d69a2201bbf5f6740b22a2f9.js';
-
-    injectScript(url);
   },
 
   /**
@@ -117,6 +111,13 @@ export default Ember.Route.extend({
         Ember.A(configuracion).forEach((item) => {
           configObject.set(item.key, item.value);
         });
+
+        /**
+         * Inject HelloBar if defined
+         */
+        if (!isNone(configObject.helloBarUrl)) {
+          injectScript(configObject.helloBarUrl);
+        }
 
         return configObject;
       }),
