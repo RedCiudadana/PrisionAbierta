@@ -81,45 +81,15 @@
     </div>
   </div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Biografía</div>
-    <div class="panel-body">
-      {{{ model.perfil.biografia }}}
-    </div>
-  </div>
+  {{#each-in model.perfil.recuadros as |key item|}}
+    <div class="panel panel-default">
+      {{#if item.label}}<div class="panel-heading">{{{item.label}}}</div>{{/if}}
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Experiencia Profesional</div>
-    <div class="panel-body">
-      {{{ model.perfil.experienciaProfesional }}}
+      <div class="panel-body">
+        {{{item.value}}}
+      </div>
     </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">Experiencia en Derechos Humanos</div>
-    <div class="panel-body">
-      {{{ model.perfil.experienciaEnDH }}}
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">Tabla gradacion</div>
-    <div class="panel-body">
-      {{#each datosTablaGradacion as |dato|}}
-        <p>
-          <strong>{{dato.aspecto}}</strong>
-          {{#if (is-numeric dato.puntaje)}}
-            - Puntaje obtenido: {{dato.puntaje}}
-          {{else}}
-            {{dato.puntaje}}
-          {{/if}}
-        </p>
-      {{/each}}
-      <p>
-        <strong>Total puntaje</strong> {{totalPuntajeGradacion}}
-      </p>
-    </div>
-  </div>
+  {{/each-in}}
 </div>
 
 {{disqus-comments identifier=model.perfil.disqusIdentifier}}

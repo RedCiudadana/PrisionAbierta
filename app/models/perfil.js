@@ -25,6 +25,7 @@ export default Model.extend({
   estado: attr(),
 
   informacionGeneral: attr('informacion-general'),
+  recuadros: attr('frente-a-frente'),
   frenteAFrente: attr('frente-a-frente'),
 
   fotoPerfil: Ember.computed('fotoUrl', function() {
