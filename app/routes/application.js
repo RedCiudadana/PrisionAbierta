@@ -32,8 +32,8 @@ export default Ember.Route.extend({
         return Ember.RSVP.all([
 
           /**
-           * Setear la información del perfil mediante la parametrización proveniente
-           * de la configuración
+           * Setear la información general del perfil mediante la parametrización
+           * proveniente de la configuración
            */
           spreadsheet
             .fetch('perfil-informacion-general-configuracion')
@@ -50,6 +50,27 @@ export default Ember.Route.extend({
               let prefilSerializer = this.store.serializerFor('perfil');
 
               prefilSerializer.set('informacionGeneralFields', perfilDataArray);
+            }),
+
+          /**
+           * Setear la información de recuadros del perfil mediante la parametrización
+           * proveniente de la configuración
+           */
+          spreadsheet
+            .fetch('perfil-recuadros-configuracion')
+            .then((configuracionData) => {
+              let perfilRecuadrosDataArray = Ember.A([]);
+
+              Ember.A(configuracionData).forEach((item) => {
+                perfilRecuadrosDataArray.pushObject({
+                  field: item.field,
+                  label: item.label
+                });
+              });
+
+              let prefilSerializer = this.store.serializerFor('perfil');
+
+              prefilSerializer.set('recuadrosFields', perfilRecuadrosDataArray);
             }),
 
           // Información general de diputado
@@ -104,7 +125,6 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       partidos: this.store.findAll('partido'),
       perfiles: this.store.findAll('perfil'),
-      diputados: this.store.findAll('diputado-comision'),
       config: spreadsheet.fetch('configuracion').then((configuracion) => {
         let configObject = Ember.Object.create();
 
