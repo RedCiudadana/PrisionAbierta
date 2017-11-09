@@ -1,0 +1,18 @@
+[
+  {
+    "route": "perfiles",
+    "title": "Candidatos"
+  },
+  {
+    "route": "comision",
+    "title": "Comision DH"
+  },
+  {
+    "route": "resultados",
+    "title": "Tabla de Gradación"
+  },
+  {
+    "route": "metodologia",
+    "title": "Metodología"
+  }
+]

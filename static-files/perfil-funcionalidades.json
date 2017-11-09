@@ -1,0 +1,23 @@
+[
+  {
+    "route": "perfil.index",
+    "link": "",
+    "name": "Perfil",
+    "iconClass": "icon-edit",
+    "title": "Perfil"
+  },
+  {
+    "route": "perfil.frente-a-frente",
+    "link": "",
+    "name": "Frente a Frente",
+    "iconClass": "icon-bolt",
+    "title": "Compara aquí la postura de los candidatos. Enumeramos la respuesta que dieron en nuestro cuestionario y otras propuestas que han dicho en medios de comunicación y foros. Haz click en \"fuente\" y encuentra el origen de la cita."
+  },
+  {
+    "route": "perfil.fact-checking",
+    "link": "",
+    "name": "Fact checking",
+    "iconClass": "icon-check",
+    "title": "Compara aquí las declaraciones de los candidatos contra la verificación de los hechos"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "field": "cargo",
+    "label": "Cargo:"
+  },
+  {
+    "field": "distrito",
+    "label": "Distrito:"
+  },
+  {
+    "field": "profesion",
+    "label": "Profesión:"
+  },
+  {
+    "field": "educacion",
+    "label": "Educación:"
+  },
+  {
+    "field": "fechaNacimiento",
+    "label": "Fecha de nacimiento:"
+  },
+  {
+    "field": "lugarNacimiento",
+    "label": "Lugar de nacimiento:"
+  }
+]

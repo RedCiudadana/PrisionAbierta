@@ -1,0 +1,20 @@
+[
+  {
+    "www": "perfiles",
+    "title": "Elección Procurador Derechos Humanos",
+    "link": "",
+    "imageLink": "https://raw.githubusercontent.com/RedCiudadana/Recursos-PDH/master/Web/elementos/candidatos.jpg"
+  },
+  {
+    "www": "comision",
+    "title": "Comisión de Derechos Humanos del Congreso de Guatemala",
+    "link": "",
+    "imageLink": "https://raw.githubusercontent.com/RedCiudadana/Recursos-PDH/master/Web/elementos/comision.jpg"
+  },
+  {
+    "www": "",
+    "title": "Justicia Abierta",
+    "link": "http://www.justicia-abierta.org/",
+    "imageLink": "https://raw.githubusercontent.com/RedCiudadana/Recursos-PDH/master/Web/elementos/justicia.jpg"
+  }
+]
